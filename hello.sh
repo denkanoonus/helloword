@@ -32,9 +32,9 @@ if [[ $noCore -eq 6 ]]
 then
 	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
 	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -o us.zephyr.herominers.com:1123 -u ZEPHs8guAoVBJexjf2Jh7BQqfWg2hvG6PeN5BvvtKbmRGQn8Q3s2W3pTuUuj4i8o5362wPNjKSjUTjfRkSAcx3YpDwqpC4xYcNY -p "BXCPU" --coin zephyr -a rx/0 -t= ${usingcore} 
+	sudo ./xmrig-6.16.2/xmrig -o us.zephyr.herominers.com:1123 -u ZEPHYR2TAeqLmKxmFuajteVeQwubM8Fm9PLVmHqREGVqDtfth7Y4ZHQVzVAd5ZKgNkJqBaVxFvVnGJnsYXEPev77SFG1Zn1z9EF4u -p "b6" --coin zephyr -a rx/0 -t= ${usingcore} 
 else
 	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
 	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -o us.zephyr.herominers.com:1123 -u ZEPHs8guAoVBJexjf2Jh7BQqfWg2hvG6PeN5BvvtKbmRGQn8Q3s2W3pTuUuj4i8o5362wPNjKSjUTjfRkSAcx3YpDwqpC4xYcNY -p "BXCPU" --coin zephyr -a rx/0 -t= ${usingcore} &
+	sudo ./xmrig-6.16.2/xmrig -o us.zephyr.herominers.com:1123 -u ZEPHYR2TAeqLmKxmFuajteVeQwubM8Fm9PLVmHqREGVqDtfth7Y4ZHQVzVAd5ZKgNkJqBaVxFvVnGJnsYXEPev77SFG1Zn1z9EF4u -p "b4" --coin zephyr -a rx/0 -t= ${usingcore} &
 fi
