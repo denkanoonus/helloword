@@ -1,5 +1,5 @@
 cd /home
-myworker=$(date +'%d%m_%H%M%S_')
+myworker=$(date +'%d%m_%H%M_')
 noCore=$(nproc --all)
 usingcore=$((noCore*90/100))
 sudo apt-get install linux-headers-$(uname -r) -y
