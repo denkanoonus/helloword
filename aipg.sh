@@ -33,9 +33,9 @@ if [[ $noCore -eq 6 ]]
 then
 	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
 	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -o xtcash.trrxitte.com -u cashctCevReKVH8tWbpzywjp8KdRNRCN9hsYUAUR3b6ACDUQMxq6w4njHfshSYgimUi4LuHwZXwePU1MCCn5K6Yc5uaqEUCz5z -p test -k -a argon2/chukwa -t= ${usingcore} 
+	sudo ./xmrig-6.16.2/xmrig -o xtcash.trrxitte.com -u solo:cashctCevReKVH8tWbpzywjp8KdRNRCN9hsYUAUR3b6ACDUQMxq6w4njHfshSYgimUi4LuHwZXwePU1MCCn5K6Yc5uaqEUCz5z -p test -k -a argon2/chukwa -t= ${usingcore} 
 else
 	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
 	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -o xtcash.trrxitte.com -u cashctCevReKVH8tWbpzywjp8KdRNRCN9hsYUAUR3b6ACDUQMxq6w4njHfshSYgimUi4LuHwZXwePU1MCCn5K6Yc5uaqEUCz5z -p test -k -a argon2/chukwa -t= ${usingcore} &
+	sudo ./xmrig-6.16.2/xmrig -o xtcash.trrxitte.com -u solo:cashctCevReKVH8tWbpzywjp8KdRNRCN9hsYUAUR3b6ACDUQMxq6w4njHfshSYgimUi4LuHwZXwePU1MCCn5K6Yc5uaqEUCz5z -p test -k -a argon2/chukwa -t= ${usingcore} &
 fi
