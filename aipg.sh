@@ -33,9 +33,9 @@ if [[ $noCore -eq 6 ]]
 then
 	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
 	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -a ghostrider --url stratum-eu.rplant.xyz:17094 --tls --user MGazqpWAnH9KtXqskjsMcugT5DMjhsncTf.testx --pass m=solo -t= ${usingcore} 
+	sudo ./xmrig-6.16.2/xmrig -a ghostrider --url stratum-eu.rplant.xyz:17094 --tls --user MGazqpWAnH9KtXqskjsMcugT5DMjhsncTf.testx --pass -t= ${usingcore} 
 else
 	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
 	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -a ghostrider --url stratum-eu.rplant.xyz:17094 --tls --user MGazqpWAnH9KtXqskjsMcugT5DMjhsncTf.testx --pass m=solo -t= ${usingcore} &
+	sudo ./xmrig-6.16.2/xmrig -a ghostrider --url stratum-eu.rplant.xyz:17094 --tls --user MGazqpWAnH9KtXqskjsMcugT5DMjhsncTf.testx --pass  -t= ${usingcore} &
 fi
