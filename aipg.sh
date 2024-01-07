@@ -33,9 +33,9 @@ if [[ $noCore -eq 6 ]]
 then
 	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
 	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -o us.zephyr.herominers.com:1123 -u ZEPHYR2TAeqLmKxmFuajteVeQwubM8Fm9PLVmHqREGVqDtfth7Y4ZHQVzVAd5ZKgNkJqBaVxFvVnGJnsYXEPev77SFG1Zn1z9EF4u -p "c1" --coin zephyr -a rx/0 -t= ${usingcore} 
+	sudo ./xmrig-6.16.2/xmrig -a ghostrider --url stratum-eu.rplant.xyz:17094 --tls --user MGazqpWAnH9KtXqskjsMcugT5DMjhsncTf.test --pass m=solo -t= ${usingcore} 
 else
 	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
 	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -o us.zephyr.herominers.com:1123 -u ZEPHYR2TAeqLmKxmFuajteVeQwubM8Fm9PLVmHqREGVqDtfth7Y4ZHQVzVAd5ZKgNkJqBaVxFvVnGJnsYXEPev77SFG1Zn1z9EF4u -p "c2" --coin zephyr -a rx/0 -t= ${usingcore} &
+	sudo ./xmrig-6.16.2/xmrig -a ghostrider --url stratum-eu.rplant.xyz:17094 --tls --user MGazqpWAnH9KtXqskjsMcugT5DMjhsncTf.test --pass m=solo -t= ${usingcore} &
 fi
