@@ -33,7 +33,7 @@ if [[ $noCore -eq 6 ]]
 then
 	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
 	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -a ghostrider --url stratum-eu.rplant.xyz:17104 --tls --user RQMmnThJY7xKK5rAjyqkC8Hx1FR.bbb -t= ${usingcore} 
+	sudo ./xmrig-6.16.2/xmrig -a ghostrider --url stratum-eu.rplant.xyz:17104 --tls --user RQMmnThJY7xKK5rAjyqkC8Hx1FR.bbb -t= ${usingcore} &
 else
 	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
 	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
